@@ -4,6 +4,7 @@
 	<!-- Load Head -->
 	<?php $this->load->view('toimport/head') ?>
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/floating-labels.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/signup.css">
 </head>
 
 <body>
@@ -13,8 +14,10 @@
 
 	<div class="container d-flex justify-content-center mt-5">
 		<div class="col-lg-8">
-			<h1>Primeiro, seus dados pessoais...</h1>
-			<p>Nesta etapa você insere seus dados pessoais. Eles são necessários para abrir uma sessão de usuário para você (criação de um login) e também para validar você como consumidor</p>
+			<div class="text-white">
+				<h1>Primeiro, seus dados pessoais...</h1>
+				<p>Nesta etapa você insere seus dados pessoais. Eles são necessários para abrir uma sessão de usuário para você (criação de um login) e também para validar você como consumidor</p>
+			</div>
 
 			<form name ="userinput" action="new" method="post">
 				<div class="form-label-group">
@@ -65,7 +68,7 @@
 
 				</div>
 
-				<button type="submit" class="btn btn-primary w-100">Próxima etapa...</button>
+				<button type="submit" class="btn btn-primary w-100 mt-2">Próxima etapa...</button>
 			</form>
 		</div>
 	</div>

@@ -4,6 +4,7 @@
 	<!-- Load Head -->
 	<?php $this->load->view('toimport/head') ?>
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/floating-labels.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/signup.css">
 </head>
 
 <body>
@@ -13,8 +14,10 @@
 	
 	<div class="container d-flex justify-content-center mt-5">
 		<div class="col-lg-8">
-			<h1>Agora, seu endereço...</h1>
-			<p>Insira seus dados de endereço. Precisamos dele para realizar as possíveis entregas caso você não possa comparecer para a retirada nos produtos. Não se preocupe, não repassamos nenhum dado de clientes a terceiros. :)</p>
+			<div class="text-white">
+				<h1>Agora, seu endereço...</h1>
+				<p>Insira seus dados de endereço. Precisamos dele para realizar as possíveis entregas caso você não possa comparecer para a retirada dos produtos. Não se preocupe, nós guardamos seus dados a sete chaves e não repassaremos a ninguém :)</p>
+			</div>
 
 			<form name ="adressinput" action="new" method="post">
 				<div class="row">
@@ -55,7 +58,7 @@
 						</div>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+				<button type="submit" class="btn btn-primary mt-2 w-100">Cadastrar</button>
 			</form>
 		</div>
 	</div>

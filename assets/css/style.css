@@ -1,6 +1,73 @@
+/*
+	:: Theme developed by Vinicius Lisboa
+	:: lisboamvinicius@gmail.com
+	:: Rio Claro - SP, Brazil
+
+### INFOS ###
+	:: PRIMARY COLOR: #fdbe2d;
+	:: SECONDARY COLOR: #ffb200;
+
+*/
+
+*:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
 body {
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 	font-size: 16px;
+}
+
+.primary-color {
+	color:#fdbe2d;
+}
+
+a,a:hover {
+	color:white;
+}
+
+.a-primary {
+	color: #fdbe2d;
+}
+
+.a-primary:hover {
+	color:#ffb200;
+	text-decoration: none;
+}
+
+.header {
+	background-image: url(../img/header.jpg);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.nav-color {
+	background-color: #fdbe2d;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #fdbe2d;
+}
+
+hr.light {
+  border-color: #fff;
+}
+
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.display-4 {
+	text-transform: uppercase;
 }
 
 .form-control {
@@ -8,7 +75,24 @@ body {
 }
 
 .btn {
-	border-radius: 0px;
+	background-color: #fdbe2d; 
+	border-radius: 300px;
+	border-color: #fdbe2d;
+}
+
+.btn:hover {
+	background-color: #ffb200;
+	border-color: #ffb200;
+	transform: scale(1.025);
+}
+
+.header-content {
+	top: 50%; 
+	left: 15%; 
+	width:70%; 
+	position: absolute; 
+	transform: translateY(-50%);
+	
 }
 
 .navbar-brand {
