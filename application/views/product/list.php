@@ -24,7 +24,7 @@
   			</button></p>
 		<?php endif ?>
 
-		<?php if($this->session->userdata('user_logged')) : ?>
+		<?php if($this->session->userdata('logged_in')) : ?>
 
 			<h1>Lista de produtos...</h1>
 			<a class="btn btn-primary float-right mb-4" href="<?= base_url() ?>product/form_new">+ Novo</a>

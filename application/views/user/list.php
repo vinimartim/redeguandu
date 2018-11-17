@@ -10,7 +10,7 @@
 	<?php $this->load->view('toimport/navbar') ?>
 
 	<div class="container mt-5">
-		<?php if($this->session->userdata('user_logged')) : ?>
+		<?php if($this->session->userdata('logged_in') : ?>
 			<h1>Lista de usuários...</h1>
 		<?php else : ?>
 			<p class="alert alert-danger">Você não tem permissões necessárias para acessar essa página. Clique <a href="<?= base_url() ?>">aqui</a> e retorne à página principal</p>

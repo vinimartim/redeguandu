@@ -49,6 +49,8 @@ class User extends CI_Controller {
 		$user = $this->user_model->buscaPasse($email,$senha);
 
 		$role = array(
+			'name' => $user['name'],
+			'email' => $user['email'],
 			'user_id' => $user['id'],
 			'admin' => $user['admin'],
 			'provider' => $user['provider'],

@@ -1,0 +1,18 @@
+#mainNav.nav-shrink {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff;
+}
+#mainNav.nav-shrink .navbar-brand {
+  color: #fdbe2d;
+}
+#mainNav.nav-shrink .navbar-brand:focus, #mainNav.nav-shrink .navbar-brand:hover {
+  color: #fdbe2d;
+}
+#mainNav.nav-shrink .navbar-nav > li.nav-item > a.nav-link,
+#mainNav.nav-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+  color: #212529;
+}
+#mainNav.nav-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav.nav-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: #fdbe2d;
+}

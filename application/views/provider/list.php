@@ -3,7 +3,6 @@
 <head>
 	<!-- Load Head -->
 	<?php $this->load->view('toimport/head') ?>
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/floating-labels.css">
 </head>
 
 <body>
@@ -26,7 +25,7 @@
   			</button></p>
 		<?php endif ?>
 
-		<?php if($this->session->userdata('user_logged')) : ?>
+		<?php if($this->session->userdata('logged_in')) : ?>
 
 		<h1>Lista de fornecedores...</h1>
 		<a class="btn btn-primary float-right mb-4" href="<?= base_url() ?>provider/form_check_user">+ Novo</a>

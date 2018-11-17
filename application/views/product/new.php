@@ -4,10 +4,8 @@
 	<!-- Load Head -->
 	<?php $this->load->view('toimport/head') ?>
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/floating-labels.css">
-</head>
 
 <body>
-	
 	<!-- Load Navbar -->
 	<?php $this->load->view('toimport/navbar') ?>
 
@@ -44,7 +42,7 @@
 				</div>
 
 				<div class="custom-control custom-checkbox">
-					<input type="checkbox" name="active" class="custom-control-input" id="inputActive" value="1" checked>
+					<input type="checkbox" name="active" class="custom-control-input" id="inputActive" value="1">
 					<label class="custom-control-label" for="inputActive">Ativo?</label>
 				</div>
 

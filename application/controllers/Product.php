@@ -6,9 +6,7 @@ class Product extends CI_Controller {
 		$this->load->model('product_model');
 		$products = $this->product_model->buscaTodos();
 		$dados = array('products' => $products);
-		$this->load->view('product/list', $dados, [
-			'title' => 'Todos os produtos'
-		]);
+		$this->load->view('product/list', $dados);
 	}
 
 	public function form_new() {

@@ -1,5 +1,5 @@
 <!--Header-->
-<nav class="navbar navbar-expand-lg navbar-light nav-shrink" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 	<div class="container">
 		<a class="navbar-brand js-scroll-trigger" href="<?=base_url() ?>">Rede Guandu</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,34 +27,37 @@
 						<a class="nav-link js-scroll-trigger" href="<?= base_url() ?>provider/index">Fornecedores</a>
 					</li>
 					<?php else : ?>
-						opjfiosjiof
+						Sem permissões
 					<?php endif ?>
 
 				
-
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="<?= base_url() ?>/">Minha conta</a>
 					</li>
 
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="<?= base_url() ?>user/logout">Logout</a>
-					</li>
+					<li class="nav-item dropdown">
+						
+						<a class="nav-link js-scroll-trigger dropdown-toggle" href="#" role="button" id="droplogout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $name ?></a>
+					
+						<div class="dropdown-menu text-center" aria-labelledby="droplogout">
+							<small class="px-2"><?php echo $email ?></small>
+							<div class="dropdown-divider"></div>
+							<a class="js-scroll-trigger dropdown-item" href="<?= base_url() ?>user/logout">Logout</a>	
+						</div>
 
-					<li class="nav-item">
-						<h3><?php echo $name ?></h3><br>
-						<p><small><?php echo $email ?></small></p>
 					</li>
 
 				<?php else : ?>
 					<li class="nav-item active">
 						<a class="nav-link js-scroll-trigger"  href="<?= base_url() ?>">Home</a>
 					</li>
+
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger"  href="<?= base_url() ?>user/form_new">Cadastre-se</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="<?= base_url() ?>user/form_login">Login</a>
+						<a class="nav-link js-scroll-trigger" href="#login">Login</a>
 					</li>
 
 				<?php endif ?>
